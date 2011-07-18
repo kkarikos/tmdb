@@ -2,7 +2,7 @@
 
 TMDb API wrapper for Node.js users. Most of the TMDb API methods are not yet supported.
 
-Wrapper may be injected with a [Redis](http://redis.io) cache.
+Wrapper can be injected with a [Redis](http://redis.io) cache.
 
 ## Requirements
 
