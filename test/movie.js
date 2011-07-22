@@ -1,9 +1,15 @@
 var assert = require('assert');
+var fs = require('fs');
+var key = new String(fs.readFileSync('APIKEY')).replace(/(\r\n|\n|\r)/gm,"");
 var opts = { 
-  apikey: 'yourapikey',
+  apikey: key,
   cache: require('redis').createClient()
   };
 var tmdb = require('../lib/tmdb').init(opts);
+
+tmdb.Movie.browse({order_by: 'rating',order:'asc'},function(err,result) {
+  console.log(result);
+});
 
 tmdb.Movie.search({query:'Transformers'},function(err,result) {
   if(!err) {
@@ -14,7 +20,7 @@ tmdb.Movie.search({query:'Transformers'},function(err,result) {
     }
   }
   else {
-    console.log('error:'+err);
+    console.log('error:'+JSON.stringify(err));
   }
 });
 
