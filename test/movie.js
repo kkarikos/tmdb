@@ -65,4 +65,5 @@ tmdb.Movie.search({query:'Transformers'}, function(err,result) {
   console.log(err);
 });
 
-tmdb.cache.quit();
+
+//setTimeout("tmdb.cache.quit();", 10000);
