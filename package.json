@@ -8,7 +8,7 @@
   , "homepage": "https://github.com/kkarikos/tmdb"
   , "author": {
     "name": "kkarikos",
-    "email": ""
+    "email": "rivasign@gmail.com"
   }
   , "dependencies" : {
         "request" : "2.9.x"
