@@ -1,0 +1,16 @@
+{
+    "name" : "tmdb"
+  , "description" : "A TMDb API wrapper for node"
+  , "version" : "0.0.1"
+  , "keywords" : ["tmdb","themoviedb","api", "movies", "imdb"]
+  , "directories" : { "lib" : "./lib" }
+  , "main" : "index.js"
+  , "homepage": "https://github.com/kkarikos/tmdb"
+  , "author": {
+    "name": "kkarikos",
+    "email": ""
+  }
+  , "dependencies" : {
+        "request" : "2.9.x"
+  }
+}
