@@ -4,15 +4,14 @@
 
 Wrapper can be injected with a [Redis](http://redis.io) cache.
 
-## Requirements
+## How to install
 
-* [request](https://github.com/mikeal/request)
-* [redis](https://github.com/mranney/node_redis) (optional)
+	npm install moviedb
 
 ## Samples
 
 ```js
-var tmdb = require('./tmdb').init({apikey:'yourapikey'});
+var tmdb = require('tmdb').init({apikey:'yourapikey'});
 tmdb.Movie.search({query: 'Transformers', year: 2007}, function(err,res) {
   for(var x in res) {
     console.log(res[x].name);
